@@ -1,0 +1,31 @@
+# Servayam
+
+Servayam is an India-based 3D animation and creative studio producing cinematic animations, architectural visualizations, 3D models, and original animated content.
+
+## Core Pages
+
+- Homepage: https://servayam.com/
+- Services: https://servayam.com/services/
+- Portfolio: https://servayam.com/portfolio/
+- Interior Projects: https://servayam.com/projects/interior/
+- Exterior Projects: https://servayam.com/projects/exterior/
+- 3D Models: https://servayam.com/projects/3d-models/
+- Originals: https://servayam.com/originals/
+- About: https://servayam.com/about/
+- Contact: https://servayam.com/contact/
+- Privacy Policy: https://servayam.com/privacy-policy/
+
+## Services
+
+- 3D animation
+- Architectural visualization
+- Interior animation
+- Exterior visualization
+- 3D modeling
+- Animated brand content
+- Original animated storytelling
+
+## Social Profiles
+
+- Instagram: https://www.instagram.com/gigglefilmz/
+- YouTube: https://www.youtube.com/@GiggleFilmz

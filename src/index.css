@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Work+Sans:wght@400;500;600&family=Press+Start+2P&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-pixel: "Press Start 2P", monospace;
+
+  --color-surface-container-high: #e4e2e1;
+  --color-on-primary-fixed: #002a34;
+  --color-error-container: #fb5151;
+  --color-background: #f9f6f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-error: #ffefee;
+  --color-surface-variant: #dfdcdc;
+  --color-tertiary-dim: #5e4e00;
+  --color-inverse-on-surface: #9e9c9c;
+  --color-primary-dim: #00576a;
+  --color-primary-fixed-dim: #28c0e4;
+  --color-tertiary-fixed: #ffd709;
+  --color-on-background: #2f2f2e;
+  --color-on-surface: #2f2f2e;
+  --color-on-secondary: #ffeef8;
+  --color-inverse-primary: #40cef3;
+  --color-surface: #f9f6f5;
+  --color-on-secondary-container: #820082;
+  --color-primary: #006479;
+  --color-secondary-container: #ffbdf3;
+  --color-inverse-surface: #0e0e0e;
+  --color-secondary-fixed-dim: #ffa6f3;
+  --color-error-dim: #9f0519;
+  --color-on-tertiary-container: #5b4b00;
+  --color-tertiary: #6c5a00;
+  --color-primary-fixed: #40cef3;
+  --color-error: #b31b25;
+  --color-surface-container: #eae7e7;
+  --color-secondary-fixed: #ffbdf3;
+  --color-outline: #787676;
+  --color-on-primary-container: #00414f;
+  --color-surface-container-low: #f3f0ef;
+  --color-on-secondary-fixed: #620061;
+  --color-tertiary-container: #ffd709;
+  --color-on-surface-variant: #5c5b5b;
+  --color-on-primary-fixed-variant: #004a5a;
+  --color-on-primary: #e0f6ff;
+  --color-surface-tint: #006479;
+  --color-secondary-dim: #900090;
+  --color-surface-bright: #f9f6f5;
+  --color-on-error-container: #570008;
+  --color-primary-container: #40cef3;
+  --color-surface-dim: #d6d4d3;
+  --color-outline-variant: #afadac;
+  --color-tertiary-fixed-dim: #efc900;
+  --color-secondary: #a400a4;
+  --color-on-tertiary: #fff2cd;
+  --color-on-tertiary-fixed: #453900;
+  --color-on-secondary-fixed-variant: #920091;
+  --color-on-tertiary-fixed-variant: #665500;
+  --color-surface-container-highest: #dfdcdc;
+
+  --color-dark-background: #0e0e0e;
+  --color-dark-on-background: #b3b3b3;
+  --color-dark-surface: #1a1a1a;
+  --color-dark-on-surface: #c4c4c4;
+  --color-dark-surface-container: #2f2f2e;
+  --color-dark-on-surface-variant: #afadac;
+}
+
+@layer base {
+  .dark {
+    --color-background: var(--color-dark-background);
+    --color-on-background: var(--color-dark-on-background);
+    --color-surface: var(--color-dark-surface);
+    --color-on-surface: var(--color-dark-on-surface);
+    --color-surface-container: var(--color-dark-surface-container);
+    --color-on-surface-variant: var(--color-dark-on-surface-variant);
+    --color-surface-container-low: #252524;
+    --color-surface-container-lowest: #121212;
+  }
+}
+
+@layer utilities {
+  .halftone {
+    background-image: radial-gradient(circle, currentColor 1px, transparent 1px);
+    background-size: 4px 4px;
+  }
+  .comic-burst {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  }
+  .ink-offset-primary {
+    box-shadow: 6px 6px 0px 0px var(--color-primary-dim);
+  }
+  .ink-offset-secondary {
+    box-shadow: 6px 6px 0px 0px var(--color-secondary-dim);
+  }
+  .ink-offset-black {
+    box-shadow: 8px 8px 0px 0px var(--color-on-background);
+  }
+}
+
+html,
+body {
+  overflow-x: hidden;
+  @apply bg-background text-on-background font-body;
+}
