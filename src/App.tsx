@@ -57,10 +57,6 @@ interface RouteMeta {
   canonical: string;
 }
 
-interface RouteSchemaMeta {
-  src: string;
-}
-
 const ROUTE_META: Record<string, RouteMeta> = {
   "/": {
     title: "Servayam | 3D Animation Studio in India",
@@ -124,19 +120,6 @@ const ROUTE_META: Record<string, RouteMeta> = {
   },
 };
 
-const ROUTE_SCHEMA: Record<string, RouteSchemaMeta> = {
-  "/": { src: "/schema/home.jsonld" },
-  "/services": { src: "/schema/services.jsonld" },
-  "/portfolio": { src: "/schema/portfolio.jsonld" },
-  "/projects/interior": { src: "/schema/projects-interior.jsonld" },
-  "/projects/exterior": { src: "/schema/projects-exterior.jsonld" },
-  "/projects/3d-models": { src: "/schema/projects-3d-models.jsonld" },
-  "/originals": { src: "/schema/originals.jsonld" },
-  "/about": { src: "/schema/about.jsonld" },
-  "/contact": { src: "/schema/contact.jsonld" },
-  "/privacy-policy": { src: "/schema/privacy-policy.jsonld" },
-};
-
 function normalizePath(pathname: string): string {
   if (pathname.length > 1 && pathname.endsWith("/")) {
     return pathname.slice(0, -1);
@@ -152,18 +135,6 @@ function upsertMeta(selector: string, attr: "name" | "property", value: string) 
     document.head.appendChild(tag);
   }
   tag.setAttribute("content", value);
-}
-
-function upsertJsonLd(src: string) {
-  document
-    .querySelectorAll('script[type="application/ld+json"][data-route-schema="true"]')
-    .forEach((node) => node.remove());
-
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.src = src;
-  script.setAttribute("data-route-schema", "true");
-  document.head.appendChild(script);
 }
 
 function RouteIntro({ title, description }: { title: string; description: string }) {
@@ -239,9 +210,6 @@ export default function App() {
     const routeMeta =
       ROUTE_META[normalizedPath] ||
       (normalizedPath.startsWith("/projects/") ? ROUTE_META["/projects/3d-models"] : ROUTE_META["/"]);
-    const routeSchema =
-      ROUTE_SCHEMA[normalizedPath] ||
-      (normalizedPath.startsWith("/projects/") ? ROUTE_SCHEMA["/projects/3d-models"] : ROUTE_SCHEMA["/"]);
 
     document.title = routeMeta.title;
     upsertMeta("description", "name", routeMeta.description);
@@ -250,7 +218,6 @@ export default function App() {
     upsertMeta("og:url", "property", routeMeta.canonical);
     upsertMeta("twitter:title", "name", routeMeta.title);
     upsertMeta("twitter:description", "name", routeMeta.description);
-    upsertJsonLd(routeSchema.src);
 
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement | null;
     if (!canonical) {
