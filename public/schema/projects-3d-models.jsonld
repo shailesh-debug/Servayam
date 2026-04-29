@@ -1,0 +1,19 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "3D Modeling Projects | Servayam",
+    "description": "Character, prop, and environment modeling work from Servayam's 3D creative production team.",
+    "url": "https://servayam.com/projects/3d-models/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "3D Model Projects",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Character Design A" },
+        { "@type": "ListItem", "position": 2, "name": "Character Design B" },
+        { "@type": "ListItem", "position": 3, "name": "Environment Model" },
+        { "@type": "ListItem", "position": 4, "name": "Prop Collection" }
+      ]
+    }
+  }
+]

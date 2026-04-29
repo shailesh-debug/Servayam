@@ -1,0 +1,55 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Servayam",
+    "url": "https://servayam.com/",
+    "description": "Servayam is an India-based 3D animation and creative studio producing cinematic animations, architectural visualizations, product visuals, character models, and original animated content.",
+    "sameAs": [
+      "https://www.instagram.com/gigglefilmz/",
+      "https://www.youtube.com/@GiggleFilmz"
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Servayam",
+    "url": "https://servayam.com/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "3D Animation and Creative Production",
+    "provider": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    },
+    "serviceType": [
+      "3D animation",
+      "Architectural visualization",
+      "Interior animation",
+      "Exterior visualization",
+      "3D modeling",
+      "Animated brand content"
+    ],
+    "areaServed": "India"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Servayam | 3D Animation Studio in India",
+    "description": "Servayam is a 3D animation studio creating cinematic animations, architectural visualizations, 3D models, and original animated content.",
+    "url": "https://servayam.com/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    }
+  }
+]

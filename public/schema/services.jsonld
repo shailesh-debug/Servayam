@@ -1,0 +1,34 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Animation and 3D Creative Services | Servayam",
+    "description": "Servayam creates 3D animation, architectural visualisation, interior and exterior animations, character models, and animated brand content.",
+    "url": "https://servayam.com/services/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "3D Animation and Creative Production",
+    "provider": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    },
+    "serviceType": [
+      "3D animation",
+      "Architectural visualization",
+      "Interior animation",
+      "Exterior visualization",
+      "3D modeling",
+      "Animated brand content"
+    ],
+    "areaServed": "India",
+    "url": "https://servayam.com/services/"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Animation Portfolio | Servayam",
+    "description": "Explore Servayam's animation portfolio including interior and exterior visualizations, 3D models, and original content projects.",
+    "url": "https://servayam.com/portfolio/",
+    "mainEntity": {
+      "@type": "ItemList",
+      "name": "Servayam Portfolio Categories",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Interior", "url": "https://servayam.com/projects/interior/" },
+        { "@type": "ListItem", "position": 2, "name": "Exterior", "url": "https://servayam.com/projects/exterior/" },
+        { "@type": "ListItem", "position": 3, "name": "3D Models", "url": "https://servayam.com/projects/3d-models/" },
+        { "@type": "ListItem", "position": 4, "name": "Originals", "url": "https://servayam.com/originals/" }
+      ]
+    }
+  }
+]

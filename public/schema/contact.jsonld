@@ -1,0 +1,14 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Servayam | Animation Studio",
+    "description": "Contact Servayam for 3D animation, architectural visualization, and creative production enquiries.",
+    "url": "https://servayam.com/contact/",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Servayam",
+      "url": "https://servayam.com/"
+    }
+  }
+]

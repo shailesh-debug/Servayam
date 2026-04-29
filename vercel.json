@@ -1,11 +1,6 @@
 {
   "routes": [
     {
-      "src": "/sitemap.xml",
-      "status": 404,
-      "handle": "filesystem"
-    },
-    {
       "src": "/(.*)",
       "dest": "/index.html"
     }
@@ -36,7 +31,19 @@
         },
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data: https:; media-src 'self' https:; font-src 'self' https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; script-src 'self'; connect-src 'self' https://api.web3forms.com;"
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests; block-all-mixed-content; report-uri /_csp-report"
+        },
+        {
+          "key": "Content-Security-Policy-Report-Only",
+          "value": "default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; connect-src 'self' https://api.web3forms.com; font-src 'self' https://fonts.gstatic.com; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; object-src 'none'; upgrade-insecure-requests; block-all-mixed-content; report-uri /_csp-report"
+        },
+        {
+          "key": "Cross-Origin-Opener-Policy",
+          "value": "same-origin"
+        },
+        {
+          "key": "Cross-Origin-Resource-Policy",
+          "value": "same-origin"
         }
       ]
     }

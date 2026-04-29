@@ -43,7 +43,7 @@ Observed homepage response:
 Other endpoint checks:
 
 - `https://servayam.com/robots.txt` returns `404`
-- `https://servayam.com/sitemap.xml` returns `200`, but only lists the homepage
+- `https://servayam.com/sitns `200`, but only lists the homepageemap.xml` retur
 - `https://servayam.com/sitemap_index.xml` returns `404`
 - `https://servayam.com/llms.txt` returns `404`
 - `http://servayam.com/` redirects with `308` to `https://servayam.com/`
