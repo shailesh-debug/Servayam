@@ -1,8 +1,6 @@
 {
   "routes": [
     {
-      "src": "/sitemap.xml",
-      "status": 404,
       "handle": "filesystem"
     },
     {

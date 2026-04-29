@@ -52,7 +52,7 @@ export default function Hero({ onHireUs }: HeroProps) {
   }, [isShowreelOpen]);
 
   return (
-    <header id="hero" className="relative min-h-[75vh] sm:min-h-[90vh] flex items-center overflow-hidden bg-surface py-10 sm:py-16 md:py-20 px-5 sm:px-8">
+    <header className="relative min-h-[75vh] sm:min-h-[90vh] flex items-center overflow-hidden bg-surface py-10 sm:py-16 md:py-20 px-5 sm:px-8">
       {/* Halftone texture background */}
       <div className="absolute inset-0 halftone opacity-10 text-on-background pointer-events-none"></div>
       
@@ -118,8 +118,7 @@ export default function Hero({ onHireUs }: HeroProps) {
                 INSERT COIN TO CONTINUE...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;INSERT COIN TO CONTINUE...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </motion.span>
             </span>
-            <p>Servayam is an India-based 3D animation and creative studio producing cinematic animations, architectural visualizations, product visuals, character models, and original animated content.</p>
-
+            Servayam is a high-octane animation studio crafting kinetic experiences for brands that refuse to blend in. We don't just animate; we ignite.
           </motion.p>
           
           <div className="flex flex-col sm:flex-row gap-4 w-full">
