@@ -1,8 +1,32 @@
 {
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "src": "\\/assets\\/(.*)",
+      "dest": "\\/assets\\/$1"
+    },
+    {
+      "src": "\\/schema\\/(.*)",
+      "dest": "\\/schema\\/$1"
+    },
+    {
+      "src": "\\/favicon.ico",
+      "dest": "\\/favicon.ico"
+    },
+    {
+      "src": "\\/robots.txt",
+      "dest": "\\/robots.txt"
+    },
+    {
+      "src": "\\/sitemap.xml",
+      "dest": "\\/sitemap.xml"
+    },
+    {
+      "src": "\\/llms.txt",
+      "dest": "\\/llms.txt"
+    },
+    {
+      "src": "\\/(.*)",
+      "dest": "\\/index.html"
     }
   ],
   "headers": [
