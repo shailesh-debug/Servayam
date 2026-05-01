@@ -44,7 +44,7 @@ const projectCategories: ProjectCategory[] = [
       { id: 1, title: "Urban Facade", image: "/assets/Open Area  (11).webp", alt: "Urban facade exterior 3D rendering Lucknow", placeholder: "Exterior Design - 2024" },
       { id: 2, title: "Landscape Flow", image: "/assets/View (19).webp", alt: "Landscape flow exterior architectural visualization", placeholder: "Exterior Design - 2024" },
       { id: 3, title: "Architectural Marvel", image: "/assets/A (3).webp", alt: "Architectural marvel exterior 3D render by Servayam", placeholder: "Exterior Design - 2024" },
-      { id: 4, title: "Scenic Route", image: "/assets/Open Area  (11).webp", alt: "Scenic route architectural 3D visualization", placeholder: "Exterior Design - 2024" },
+      { id: 4, title: "Scenic Route", image: "/assets/View 1 (6).webp", alt: "Scenic route architectural 3D visualization", placeholder: "Exterior Design - 2024" },
     ]
   },
   {

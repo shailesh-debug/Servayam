@@ -11,7 +11,8 @@ const projects = [
     title: "Neon Drift",
     category: "3D Character / 2024",
     categoryId: "3d-models",
-    image: "/assets/Mage 2K persp Half 2_4k.jpg",
+    image: "/assets/Mage 2K persp Half 2_4k.webp",
+    alt: "Neon Drift 3D character design by Servayam Animation Studio",
     color: "bg-primary/20",
     rotate: "-rotate-2"
   },
@@ -19,7 +20,8 @@ const projects = [
     title: "Ves Book",
     category: "Interior Design / 2024",
     categoryId: "interior",
-    image: "/assets/Scene 10.png",
+    image: "/assets/Scene 10.webp",
+    alt: "Ves Book interior 3D visualization by Servayam",
     featured: true,
     color: "bg-error/20",
     rotate: "rotate-0"
@@ -28,7 +30,8 @@ const projects = [
     title: "Cyber Shell",
     category: "3D Models / 2024",
     categoryId: "3d-models",
-    image: "/assets/CP_Close2.jpg",
+    image: "/assets/CP_Close2.webp",
+    alt: "Cyber Shell 3D model render by Servayam Animation Studio Lucknow",
     color: "bg-secondary/20",
     rotate: "rotate-2"
   }
@@ -73,7 +76,7 @@ export default function KineticVault({ onExploreProjects, onCategoryClick }: Kin
               <img
                 className={`w-full h-full object-cover transition-all duration-500 ${project.featured ? '' : 'grayscale group-hover:grayscale-0'} group-hover:scale-105`}
                 src={project.image}
-                alt={project.title}
+                alt={project.alt || project.title}
               />
 
               {project.featured && (
