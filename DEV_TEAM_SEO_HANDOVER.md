@@ -358,17 +358,17 @@ Large assets found in the app bundle references:
 
 | Asset | Type | Size |
 |---|---:|---:|
-| `assets/A (3).png` | PNG | 7.2 MB |
-| `assets/View (19).png` | PNG | 2.69 MB |
-| `assets/Open Area  (11).png` | PNG | 2.65 MB |
-| `assets/A (1).png` | PNG | 1.63 MB |
-| `assets/Scene 10.png` | PNG | 1.56 MB |
-| `assets/GF View (18).png` | PNG | 1.49 MB |
-| `assets/A (9).png` | PNG | 1.43 MB |
-| `assets/CP_Back.jpg` | JPG | 1.36 MB |
-| `assets/CP_Close2.jpg` | JPG | 1.10 MB |
-| `assets/AR15_4.jpg` | JPG | 847 KB |
-| `assets/Mage 2K persp Half 2_4k.jpg` | JPG | 432 KB |
+| `assets/A (3).webp` | WEBP | 7.2 MB |
+| `assets/View (19).webp` | WEBP | 2.69 MB |
+| `assets/Open Area  (11).webp` | WEBP | 2.65 MB |
+| `assets/A (1).webp` | WEBP | 1.63 MB |
+| `assets/Scene 10.webp` | WEBP | 1.56 MB |
+| `assets/GF View (18).webp` | WEBP | 1.49 MB |
+| `assets/A (9).webp` | WEBP | 1.43 MB |
+| `assets/CP_Back.webp` | WEBP | 1.36 MB |
+| `assets/CP_Close2.webp` | WEBP | 1.10 MB |
+| `assets/AR15_4.webp` | WEBP | 847 KB |
+| `assets/Mage 2K persp Half 2_4k.webp` | WEBP | 432 KB |
 
 Required changes:
 
@@ -395,7 +395,7 @@ Example:
     sizes="(max-width: 768px) 100vw, 60vw"
   />
   <img
-    src="/assets/hero-1200.jpg"
+    src="/assets/hero-1200.webp"
     alt="Servayam 3D animation portfolio showcase"
     width="1200"
     height="675"
@@ -438,13 +438,13 @@ Missing or incomplete:
 Add:
 
 ```html
-<meta property="og:image" content="https://servayam.com/og-image.jpg" />
+<meta property="og:image" content="https://servayam.com/og-image.webp" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Servayam | 3D Animation Studio" />
 <meta name="twitter:description" content="3D animation, architectural visualization, 3D models, and original animated content from Servayam." />
-<meta name="twitter:image" content="https://servayam.com/og-image.jpg" />
+<meta name="twitter:image" content="https://servayam.com/og-image.webp" />
 ```
 
 Acceptance criteria:

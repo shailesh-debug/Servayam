@@ -12,6 +12,7 @@ interface ProjectCategory {
     id: number;
     title: string;
     image?: string;
+    alt?: string;
     link?: string;
     placeholder: string;
   }[];
@@ -26,10 +27,10 @@ const projectCategories: ProjectCategory[] = [
     borderColor: "border-primary",
     textColor: "text-primary",
     projects: [
-      { id: 1, title: "Modern Loft", image: "/assets/A (1).png", placeholder: "Interior Design - 2024" },
-      { id: 2, title: "Luxury Residence", image: "/assets/GF View (18).png", placeholder: "Interior Design - 2024" },
-      { id: 3, title: "Minimalist Studio", image: "/assets/A (9).png",placeholder: "Interior Design - 2024" },
-      { id: 4, title: "Industrial Space",image: "/assets/Scene 10.png", placeholder: "Interior Design - 2024" },
+      { id: 1, title: "Modern Loft", image: "/assets/A (1).webp", alt: "Modern loft interior 3D render by Servayam Animation Studio Lucknow", placeholder: "Interior Design - 2024" },
+      { id: 2, title: "Luxury Residence", image: "/assets/GF View (18).webp", alt: "Luxury residence interior 3D visualization by Servayam", placeholder: "Interior Design - 2024" },
+      { id: 3, title: "Minimalist Studio", image: "/assets/A (9).webp", alt: "Minimalist studio interior 3D render", placeholder: "Interior Design - 2024" },
+      { id: 4, title: "Industrial Space", image: "/assets/Scene 10.webp", alt: "Industrial space interior 3D rendering by Servayam", placeholder: "Interior Design - 2024" },
     ]
   },
   {
@@ -40,10 +41,10 @@ const projectCategories: ProjectCategory[] = [
     borderColor: "border-secondary",
     textColor: "text-secondary",
     projects: [
-      { id: 1, title: "Urban Facade", image: "/assets/Open Area  (11).png", placeholder: "Exterior Design - 2024" },
-      { id: 2, title: "Landscape Flow", image: "/assets/View (19).png",placeholder: "Exterior Design - 2024" },
-      { id: 3, title: "Architectural Marvel",image: "/assets/A (3).png",placeholder: "Exterior Design - 2024" },
-      { id: 4, title: "Scenic Route", image: "/assets/Open Area  (11).png", placeholder: "Exterior Design - 2024" },
+      { id: 1, title: "Urban Facade", image: "/assets/Open Area  (11).webp", alt: "Urban facade exterior 3D rendering Lucknow", placeholder: "Exterior Design - 2024" },
+      { id: 2, title: "Landscape Flow", image: "/assets/View (19).webp", alt: "Landscape flow exterior architectural visualization", placeholder: "Exterior Design - 2024" },
+      { id: 3, title: "Architectural Marvel", image: "/assets/A (3).webp", alt: "Architectural marvel exterior 3D render by Servayam", placeholder: "Exterior Design - 2024" },
+      { id: 4, title: "Scenic Route", image: "/assets/Open Area  (11).webp", alt: "Scenic route architectural 3D visualization", placeholder: "Exterior Design - 2024" },
     ]
   },
   {
@@ -54,10 +55,10 @@ const projectCategories: ProjectCategory[] = [
     borderColor: "border-tertiary",
     textColor: "text-tertiary",
     projects: [
-      { id: 1, title: "Character Design A",image:"/assets/Mage 2K persp Half 2_4k.jpg", placeholder: "3D Modeling - 2024" },
-      { id: 2, title: "Character Design B",  image: "/assets/CP_Back.jpg",placeholder: "3D Modeling - 2024" },
-      { id: 3, title: "Environment Model",  image: "/assets/CP_Close2.jpg",placeholder: "3D Modeling - 2024" },
-      { id: 4, title: "Prop Collection",  image: "/assets/AR15_4.jpg",placeholder: "3D Modeling - 2024" },
+      { id: 1, title: "Character Design A", image: "/assets/Mage 2K persp Half 2_4k.webp", alt: "3D character design by Servayam Animation Studio Lucknow", placeholder: "3D Modeling - 2024" },
+      { id: 2, title: "Character Design B", image: "/assets/CP_Back.webp", alt: "3D character model render by Servayam", placeholder: "3D Modeling - 2024" },
+      { id: 3, title: "Environment Model", image: "/assets/CP_Close2.webp", alt: "3D environment model by Servayam Animation Studio", placeholder: "3D Modeling - 2024" },
+      { id: 4, title: "Prop Collection", image: "/assets/AR15_4.webp", alt: "3D prop collection render by Servayam", placeholder: "3D Modeling - 2024" },
     ]
   },
   {
@@ -173,7 +174,7 @@ export default function AllProjects({ onBack, selectedCategory }: AllProjectsPro
                       {project.image ? (
                         <img
                           src={project.image}
-                          alt={project.title}
+                          alt={project.alt || project.title}
                           className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                         />
                       ) : (

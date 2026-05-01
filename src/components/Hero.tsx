@@ -21,11 +21,19 @@ export default function Hero({ onHireUs }: HeroProps) {
   
   // High quality varied images for the slideshow
   const images = [
-    "/assets/Mage 2K persp Half 2_4k.jpg",
-    "/assets/Scene 10.png",
-    "/assets/CP_Back.jpg",
-    "/assets/A (3).png",
-    "/assets/CP_Close2.jpg",
+    "/assets/Mage 2K persp Half 2_4k.webp",
+    "/assets/Scene 10.webp",
+    "/assets/CP_Back.webp",
+    "/assets/A (3).webp",
+    "/assets/CP_Close2.webp",
+  ];
+
+  const imageAltTexts = [
+    "3D character design animation by Servayam Animation Studio",
+    "Modern interior 3D render visualization by Servayam Lucknow",
+    "Professional character 3D model animation by Servayam",
+    "Exterior architectural 3D rendering visualization",
+    "3D character animation portfolio by Servayam Animation Studio Lucknow",
   ];
 
   useEffect(() => {
@@ -156,7 +164,7 @@ export default function Hero({ onHireUs }: HeroProps) {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                   className="absolute inset-0 w-full h-full object-cover grayscale-[0.2]" 
                   src={images[currentIdx]}
-                  alt={`Showcase ${currentIdx + 1}`}
+                  alt={imageAltTexts[currentIdx]}
                   loading="eager"
                   decoding="async"
                 />

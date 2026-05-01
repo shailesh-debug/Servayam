@@ -1,4 +1,4 @@
-# Servayam Antigravity
+# Servayam 
 
 A motion-heavy React + Vite portfolio site for Servayam Animation Studio. The site uses a bold comic-inspired visual system, animated section reveals, a category picker for projects, and a dedicated all-projects view without the home navbar.
 
@@ -13,13 +13,15 @@ A motion-heavy React + Vite portfolio site for Servayam Animation Studio. The si
 
 ## Features
 
-- Animated landing page with hero slideshow (mobile-compatible transitions/layout) and showreel modal
-- Category-based project browsing for `Interior`, `Exterior`, `3D Models`, and `Giggle Filmz`
-- Dedicated all-projects page
-- Dark mode toggle
-- Contact modal with Web3Forms submission, client-side email regex validation, and sticky hire CTA
-- Centralized theme tokens in `src/index.css`
-- Category-to-project navigation now resets scroll to top
+- **Animated landing page** with hero slideshow (mobile-compatible transitions/layout) and showreel modal
+- **Category-based project browsing** for `Interior`, `Exterior`, `3D Models`, and `Giggle Filmz`
+- **Dedicated all-projects page** with organized grid layout and filtering
+- **Dark mode toggle** with persistent theme preference
+- **Contact modal** with Web3Forms submission, client-side email regex validation, and sticky hire CTA
+- **Responsive design** optimized for mobile, tablet, and desktop
+- **Performance optimized** with Vite fast refresh and tree-shaking
+- **Centralized theme tokens** in `src/index.css` for consistent styling
+- **Smooth navigation** with category-to-project navigation that resets scroll to top
 
 ## Project Structure
 
@@ -111,7 +113,7 @@ Example:
 {
   id: 1,
   title: "Modern Loft",
-  image: "assets/Scene 10.png",
+  image: "assets/Scene 10.webp",
   placeholder: "Interior Design - 2024"
 }
 ```
@@ -137,6 +139,34 @@ Most content is currently hardcoded directly inside the relevant component file 
 - Opening a project category scrolls to the top of the projects view.
 - Some dependencies and env wiring are present from the original starter template, but this app currently behaves like a frontend portfolio site.
 - If you see `Contact form is not configured`, check `.env` and restart `npm run dev`.
+
+## Deployment
+
+### Vercel
+
+This project is configured for deployment on Vercel. The `vercel.json` file contains routing configuration that:
+
+- Handles static file serving
+- Routes all requests to `index.html` for client-side routing
+- Configures security headers
+
+**To deploy:**
+
+1. Push your code to a Git repository (GitHub, GitLab, or Bitbucket)
+2. Import the project in your Vercel dashboard
+3. Set environment variables:
+   - `VITE_WEB3FORMS_ACCESS_KEY` for contact form functionality
+4. Deploy with a single click
+
+Vercel will automatically detect the Vite configuration and build accordingly.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+This generates a production-optimized build in the `dist/` directory.
 
 ## Verification
 
