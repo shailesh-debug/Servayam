@@ -101,7 +101,7 @@ export default function Services() {
               className="absolute inset-0 flex justify-center items-center pointer-events-none"
             >
               <img
-                src="/assets/character.png"
+                src="/assets/character.webp"
                 alt="3D Character"
                 className="w-full h-full object-contain scale-[1.6] sm:scale-[2] lg:scale-[2.5] z-10 drop-shadow-[10px_10px_0_var(--color-on-background)] origin-center"
               />
